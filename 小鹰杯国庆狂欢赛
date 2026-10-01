@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+body{background:#121218;color:#fff}
+.header{padding:30px 20px;text-align:center;background:#191926}
+.header h1{font-size:24px;margin-bottom:8px}
+.header p{color:#c2c2d0;margin-bottom:6px}
+.prize{color:#39d070;font-size:22px;font-weight:bold}
+.tagA{display:inline-block;background:#6338ff;padding:3px 8px;border-radius:6px;font-size:14px}
+.tabs{display:flex;border-bottom:1px solid #2c2c3f;margin-top:16px}
+.tab{padding:14px 18px;font-size:16px;color:#aaa;cursor:pointer}
+.tab.active{color:#fff;border-bottom:3px solid #7b42ff;font-weight:500}
+.container{overflow-x:auto;padding:30px 15px}
+.bracket{display:grid;grid-template-columns:240px 240px 240px 240px;gap:0;min-width:960px;margin-bottom:60px}
+.round{display:flex;flex-direction:column;justify-content:space-around;gap:36px}
+.match{border:1px solid #333;border-radius:6px;padding:8px;background:#1e1e2f;width:220px;position:relative}
+.match .time{font-size:12px;color:#999;margin-bottom:4px}
+.match .team{padding:4px 0;border-bottom:1px solid #2e2e42;font-size:14px}
+.match .team:last-child{border-bottom:none}
+.match .bo{position:absolute;right:6px;top:8px;font-size:12px;color:#9480ff}
+.title-round{text-align:center;color:#b4b4c7;font-size:13px;margin-bottom:10px}
+.final .match{border-color:#7b42ff}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>小鹰杯国庆狂欢赛</h1>
+    <p>10/02 - 10/05 | 线上 <span class="tagA"></span></p>
+    <div class="prize">● 350rmb</div>
+</div>
+<div class="tabs">
+    <div class="tab active">阶段</div>
+</div>
+<div style="padding:15px 20px;font-size:18px;font-weight:bold;color:#fff;background:#221840">淘汰赛</div>
+<div class="container">
+<!-- ====== 胜者组 ====== -->
+<div style="margin-bottom:80px">
+    <div style="margin-left:10px; font-size:16px; color:#ddd; margin-bottom:12px;">胜者组</div>
+    <div class="bracket">
+        <!--胜者组首轮：4队比赛，胜者晋级胜者组第二轮；2队轮空-->
+        <div class="round">
+            <div class="title-round">胜者组首轮</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">队伍A</div>
+                <div class="team">队伍B</div>
+                <span class="bo">BO1</span>
+            </div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">队伍C</div>
+                <div class="team">队伍D</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--胜者组第二轮-->
+        <div class="round">
+            <div class="title-round">胜者组第二轮</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">轮空队1</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">轮空队2</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--胜者组决赛 -->
+        <div class="round">
+            <div class="title-round">胜者组决赛</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--总决赛 BO3-->
+        <div class="round">
+            <div class="title-round">总决赛</div>
+            <div class="match final">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO3</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ====== 败者组 ====== -->
+<div>
+    <div style="margin-left:10px; font-size:16px; color:#ddd; margin-bottom:12px;">败者组</div>
+    <div class="bracket">
+        <!--败者组第1轮-->
+        <div class="round">
+            <div class="title-round">败者组首轮</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--败者组第2轮-->
+        <div class="round">
+            <div class="title-round">败者组1/4决赛</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--败者组第3轮-->
+        <div class="round">
+            <div class="title-round">败者组半决赛</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+        <!--败者组第4轮（败者组决赛）-->
+        <div class="round">
+            <div class="title-round">败者组决赛</div>
+            <div class="match">
+                <div class="time">【填写时间】</div>
+                <div class="team">TBD</div>
+                <div class="team">TBD</div>
+                <span class="bo">BO1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
